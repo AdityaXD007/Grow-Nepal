@@ -10,7 +10,7 @@ import {
 import Container from "./Container";
 import { companyData, navLinks } from "@/lib/data/company";
 import { servicesData } from "@/lib/data/services";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "../ui/SocialIcons";
+import { GithubIcon, LinkedinIcon, FacebookIcon } from "../ui/SocialIcons";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -44,7 +44,7 @@ export default function Footer() {
 
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                <span>Operating globally from Kathmandu, Nepal</span>
+                <span>Operating globally from Pokhara, Nepal</span>
               </div>
             </div>
 
@@ -69,13 +69,13 @@ export default function Footer() {
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
-                href={companyData.socials.twitter}
+                href={companyData.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-9 w-9 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-slate-400 transition-colors"
-                aria-label="Twitter"
+                aria-label="Facebook"
               >
-                <TwitterIcon className="w-4 h-4" />
+                <FacebookIcon className="w-4 h-4" />
               </a>
             </div>
           </div>

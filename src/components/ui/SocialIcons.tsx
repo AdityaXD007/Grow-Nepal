@@ -43,21 +43,16 @@ export function LinkedinIcon({ className = "w-4 h-4", ...props }: IconProps) {
   );
 }
 
-export function TwitterIcon({ className = "w-4 h-4", ...props }: IconProps) {
+export function FacebookIcon({ className = "w-4 h-4", ...props }: IconProps) {
   return (
     <svg
       role="img"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       className={className}
       {...props}
     >
-      <path d="M4 4l11.733 16h4.267l-11.733-16z" />
-      <path d="M4 20l6.768-6.768m2.464-2.464l6.768-6.768" />
+      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
     </svg>
   );
 }

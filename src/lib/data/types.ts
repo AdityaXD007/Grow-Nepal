@@ -76,7 +76,7 @@ export interface CompanyInfo {
   socials: {
     github: string;
     linkedin: string;
-    twitter: string;
+    facebook: string;
   };
 }
 

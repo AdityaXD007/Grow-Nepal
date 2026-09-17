@@ -48,3 +48,9 @@
 .glow-subtle {
   box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06);
 }
+
+/* ── RotatingText cursor blink ───────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

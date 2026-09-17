@@ -45,17 +45,17 @@ export const companyData: CompanyInfo = {
     { label: "Timezone Agility", value: "24/7", helperText: "Overlapping global delivery" },
   ],
   contact: {
-    email: "hello@grownepal.tech",
-    phone: "+977 (1) 441-2090",
-    whatsapp: "+977 980-1234567",
-    location: "Kathmandu, Nepal",
-    availability: "Mon – Fri: 9:00 AM – 6:00 PM NPT (UTC+5:45)",
-    address: "Grow Nepal Tech Hub, New Baneshwor, Kathmandu, Nepal",
+    email: "grownepal8848@gmail.com",
+    phone: "+977 985-6078155",
+    whatsapp: "+977 985-6078155",
+    location: "Pokhara, Nepal",
+    availability: "Always open",
+    address: "Grow Nepal, Lakeside, Pokhara, Nepal, 33700",
   },
   socials: {
     github: "https://github.com/grow-nepal",
     linkedin: "https://linkedin.com/company/grow-nepal",
-    twitter: "https://twitter.com/grownepal_tech",
+    facebook: "https://www.facebook.com/grownepaltechnologies/?rdid=Y0TozrcYxanO44lC",
   },
 };
 
