@@ -12,7 +12,7 @@ import Section from "@/components/layout/Section";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import ContactForm from "@/components/sections/ContactForm";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/SocialIcons";
+import { GithubIcon, LinkedinIcon, FacebookIcon } from "@/components/ui/SocialIcons";
 import { companyData } from "@/lib/data/company";
 
 export const metadata: Metadata = {
@@ -166,13 +166,13 @@ export default function ContactPage() {
                     <span>LinkedIn</span>
                   </a>
                   <a
-                    href={companyData.socials.twitter}
+                    href={companyData.socials.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 rounded-xl bg-slate-100 hover:bg-black hover:text-white text-slate-700 transition-colors flex items-center gap-2 text-xs font-semibold"
+                    className="p-3 rounded-xl bg-slate-100 hover:bg-[#1877F2] hover:text-white text-slate-700 transition-colors flex items-center gap-2 text-xs font-semibold"
                   >
-                    <TwitterIcon className="w-4 h-4" />
-                    <span>X (Twitter)</span>
+                    <FacebookIcon className="w-4 h-4" />
+                    <span>Facebook</span>
                   </a>
                 </div>
               </div>

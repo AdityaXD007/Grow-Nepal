@@ -76,8 +76,9 @@ export default function HeroVideoBackground() {
       </video>
 
       {/* 3. Contrast & Readability Overlay - lighter and unblurred so video details pop */}
-      {/* Soft center vignette to keep headline legible without muting the video */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.65)_0%,_rgba(255,255,255,0.20)_55%,_transparent_100%)]" />
+      {/* On mobile, use a lighter gradient from top so the background remains visible. On larger screens, use the soft center vignette */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/40 to-transparent sm:bg-none" />
+      <div className="hidden sm:block absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.65)_0%,_rgba(255,255,255,0.20)_55%,_transparent_100%)]" />
 
       {/* Grow Nepal signature subtle dot grid pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-25" />
