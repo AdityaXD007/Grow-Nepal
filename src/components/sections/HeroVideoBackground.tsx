@@ -36,12 +36,22 @@ export default function HeroVideoBackground() {
       playVideo();
     };
 
+    // Smooth loop hack: skip the last 0.15s to avoid encoder padding / browser seek pause
+    const handleTimeUpdate = () => {
+      if (video.duration && video.currentTime >= video.duration - 0.15) {
+        video.currentTime = 0.01; // slightly offset from 0 just in case
+        playVideo();
+      }
+    };
+
     motionQuery.addEventListener("change", handleMotionChange);
+    video.addEventListener("timeupdate", handleTimeUpdate);
 
     return () => {
       motionQuery.removeEventListener("change", handleMotionChange);
       video.removeEventListener("loadeddata", playVideo);
       video.removeEventListener("canplay", playVideo);
+      video.removeEventListener("timeupdate", handleTimeUpdate);
     };
   }, []);
 

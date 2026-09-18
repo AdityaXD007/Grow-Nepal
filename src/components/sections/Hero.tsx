@@ -16,13 +16,13 @@ const ROTATING_PHRASES = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 bg-white min-h-[620px] flex items-center">
+    <section className="relative overflow-hidden pt-28 pb-16 md:pt-32 md:pb-16 bg-white min-h-screen flex items-center">
       {/* Background Video & Contrast Overlay — unchanged */}
       <HeroVideoBackground />
 
       <Container className="relative z-10 w-full">
         {/* ── Two-column grid ─────────────────────────────────────────── */}
-        <div className="grid grid-cols-1 lg:grid-cols-[58fr_42fr] gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[58fr_42fr] gap-10 lg:gap-12 items-center">
 
           {/* ── LEFT COLUMN: text content ──────────────────────────────── */}
           <div className="flex flex-col items-start text-left">
@@ -75,52 +75,6 @@ export default function Hero() {
           <HeroVisual />
         </div>
 
-        {/* ── Trust points / Value anchors — full-width below both columns */}
-        <div className="mt-12 pt-8 border-t border-slate-200/80 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-left">
-          <div className="p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-slate-200/60 shadow-xs">
-            <div className="flex items-center gap-2 mb-1">
-              <Sparkles className="w-4 h-4 text-emerald-600" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Execution
-              </span>
-            </div>
-            <p className="text-sm font-bold text-slate-900">Founder-Led Sprints</p>
-            <p className="text-xs text-slate-500">Direct architect oversight</p>
-          </div>
-
-          <div className="p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-slate-200/60 shadow-xs">
-            <div className="flex items-center gap-2 mb-1">
-              <Zap className="w-4 h-4 text-emerald-600" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Speed
-              </span>
-            </div>
-            <p className="text-sm font-bold text-slate-900">Modern Tech Stacks</p>
-            <p className="text-xs text-slate-500">Next.js & React Native</p>
-          </div>
-
-          <div className="p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-slate-200/60 shadow-xs">
-            <div className="flex items-center gap-2 mb-1">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Ownership
-              </span>
-            </div>
-            <p className="text-sm font-bold text-slate-900">100% Code IP</p>
-            <p className="text-xs text-slate-500">Your repos, your cloud</p>
-          </div>
-
-          <div className="p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-slate-200/60 shadow-xs">
-            <div className="flex items-center gap-2 mb-1">
-              <Globe className="w-4 h-4 text-emerald-600" />
-              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Value
-              </span>
-            </div>
-            <p className="text-sm font-bold text-slate-900">Cost-Competitive</p>
-            <p className="text-xs text-slate-500">Global scale from Nepal</p>
-          </div>
-        </div>
       </Container>
     </section>
   );
